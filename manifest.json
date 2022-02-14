@@ -1,0 +1,25 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "SomeExtensionId@example.com",
+          "strict_min_version": "42.0"
+        }
+      },
+    "version": "0.0.0",
+    "manifest_version": 2,
+    "name": "Your extension name.",
+    "description": "Description of your extension.",
+    "short_name": "keep-popup-loaded",
+    "permissions":["tabs", "activeTab"],
+    "background": {
+      "scripts": ["keepPopUpLoaded.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon128.png"
+      },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
